@@ -1,4 +1,4 @@
-import { Nav } from "@/components/nav";
+import { Header } from "@/components/ui/header-3";
 import { GuzmanScrollHero } from "@/components/scroll-expand-hero";
 import { Stats } from "@/components/stats";
 import { Services } from "@/components/services";
@@ -12,7 +12,7 @@ import { Footer } from "@/components/footer";
 export default function App() {
   return (
     <div className="min-h-screen bg-sand-50 text-moss-900">
-      <Nav />
+      <Header />
       <main>
         <GuzmanScrollHero />
         <Stats />

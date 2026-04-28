@@ -1,3 +1,5 @@
+import animate from "tailwindcss-animate";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
@@ -34,6 +36,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
         moss: {
           50: "#f3f7f1",
           100: "#e3ecdf",
@@ -60,5 +66,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [animate],
 };
