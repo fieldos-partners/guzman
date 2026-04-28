@@ -10,18 +10,18 @@ const links = [
 export function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50">
-      <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="mt-4 flex items-center justify-between rounded-full border border-moss-900/10 bg-sand-50/80 px-4 py-2.5 backdrop-blur-md shadow-soft">
+      <div className="mx-auto max-w-7xl px-3 md:px-8">
+        <div className="mt-3 md:mt-4 flex items-center justify-between rounded-full border border-moss-900/10 bg-sand-50/80 px-3 md:px-4 py-2 md:py-2.5 backdrop-blur-md shadow-soft">
           <a href="#" className="flex items-center gap-2.5">
             <div className="grid place-items-center h-9 w-9 rounded-full bg-moss-700 text-sand-50 font-display font-bold">
-              HG
+              B&amp;A
             </div>
             <div className="leading-tight hidden sm:block">
               <div className="font-display text-[15px] font-semibold text-moss-900">
-                Harold Guzman's
+                B&amp;A Landscape
               </div>
               <div className="text-[11px] tracking-[0.18em] uppercase text-moss-700/70">
-                Landscaping
+                Woodbridge, VA
               </div>
             </div>
           </a>

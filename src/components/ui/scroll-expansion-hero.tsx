@@ -161,7 +161,7 @@ const ScrollExpandMedia = ({
 
   const mediaWidth = 300 + scrollProgress * (isMobileState ? 650 : 1250);
   const mediaHeight = 400 + scrollProgress * (isMobileState ? 200 : 400);
-  const textTranslateX = scrollProgress * (isMobileState ? 180 : 150);
+  const textTranslateX = scrollProgress * (isMobileState ? 60 : 150);
 
   const firstWord = title ? title.split(" ")[0] : "";
   const restOfTitle = title ? title.split(" ").slice(1).join(" ") : "";
@@ -276,7 +276,7 @@ const ScrollExpandMedia = ({
                 <div className="flex flex-col items-center text-center relative z-10 mt-4 transition-none">
                   {date && (
                     <p
-                      className="text-2xl text-blue-200"
+                      className="text-2xl text-sand-100"
                       style={{ transform: `translateX(-${textTranslateX}vw)` }}
                     >
                       {date}
@@ -284,7 +284,7 @@ const ScrollExpandMedia = ({
                   )}
                   {scrollToExpand && (
                     <p
-                      className="text-blue-200 font-medium text-center"
+                      className="text-sand-100 font-medium text-center"
                       style={{ transform: `translateX(${textTranslateX}vw)` }}
                     >
                       {scrollToExpand}
@@ -299,13 +299,13 @@ const ScrollExpandMedia = ({
                 }`}
               >
                 <motion.h2
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-200 transition-none"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-sand-100 transition-none"
                   style={{ transform: `translateX(-${textTranslateX}vw)` }}
                 >
                   {firstWord}
                 </motion.h2>
                 <motion.h2
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-blue-200 transition-none"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-sand-100 transition-none"
                   style={{ transform: `translateX(${textTranslateX}vw)` }}
                 >
                   {restOfTitle}

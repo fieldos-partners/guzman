@@ -4,20 +4,20 @@ import { ArrowUpRight } from "lucide-react";
 
 export function Services() {
   return (
-    <section id="services" className="relative py-16 md:py-20">
+    <section id="services" className="relative py-12 md:py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
           <div className="max-w-2xl">
             <div className="text-xs uppercase tracking-[0.22em] text-moss-700/70">
               What we do
             </div>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl tracking-[-0.01em] text-moss-950">
+            <h2 className="mt-3 font-display text-3xl md:text-5xl tracking-[-0.01em] text-moss-950">
               Full-service yard care, done by hand.
             </h2>
           </div>
           <p className="text-moss-900/70 max-w-md">
             From a one-time cleanup to a season-long maintenance plan, every
-            service is performed by Harold and his crew — no subcontractors, no
+            service is performed by Brayan and his crew — no subcontractors, no
             shortcuts.
           </p>
         </div>

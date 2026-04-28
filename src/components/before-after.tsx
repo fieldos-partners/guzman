@@ -37,14 +37,14 @@ export function BeforeAfter() {
   const [active, setActive] = useState(cases[0]);
 
   return (
-    <section className="py-16 md:py-20">
+    <section className="py-12 md:py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8 md:mb-10">
           <div>
             <div className="text-xs uppercase tracking-[0.22em] text-moss-700/70">
               Before · After
             </div>
-            <h2 className="mt-3 font-display text-4xl md:text-5xl tracking-[-0.01em] text-moss-950">
+            <h2 className="mt-3 font-display text-3xl md:text-5xl tracking-[-0.01em] text-moss-950">
               Drag to see the difference.
             </h2>
           </div>
@@ -62,7 +62,7 @@ export function BeforeAfter() {
           className="relative rounded-3xl overflow-hidden border border-moss-900/10 shadow-soft"
         >
           <ImageComparison
-            className="aspect-[16/9] w-full"
+            className="aspect-[4/3] sm:aspect-[16/9] w-full"
             enableHover
             springOptions={{ bounce: 0, duration: 400 }}
           >

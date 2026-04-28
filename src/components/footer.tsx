@@ -6,17 +6,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2 text-moss-800">
           <Leaf className="h-4 w-4" />
-          <span className="font-display text-sm">
-            Harold Guzman's Landscaping
-          </span>
+          <span className="font-display text-sm">B&amp;A Landscape</span>
           <span className="text-moss-700/50">·</span>
           <span className="text-xs text-moss-700/70">
-            Family-run since 2010
+            Owner-operated · Woodbridge, VA
           </span>
         </div>
         <div className="text-xs text-moss-700/70">
-          © {new Date().getFullYear()} Harold Guzman's Landscaping. All rights
-          reserved.
+          © {new Date().getFullYear()} B&amp;A Landscape. All rights reserved.
         </div>
       </div>
     </footer>

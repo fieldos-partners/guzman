@@ -3,14 +3,14 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function CTA() {
   return (
-    <section id="contact" className="relative py-16 md:py-20">
+    <section id="contact" className="relative py-12 md:py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
-          className="relative overflow-hidden rounded-[2.5rem] bg-moss-800 text-sand-50 px-8 py-16 md:p-20 shadow-soft"
+          className="relative overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-moss-800 text-sand-50 px-5 py-10 sm:px-8 sm:py-14 md:p-20 shadow-soft"
         >
           <div
             aria-hidden
@@ -35,7 +35,7 @@ export function CTA() {
               <div className="text-xs uppercase tracking-[0.22em] text-sand-200/80">
                 Free estimates
               </div>
-              <h2 className="mt-3 font-display text-4xl md:text-6xl leading-[1.05] tracking-[-0.02em]">
+              <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-6xl leading-[1.05] tracking-[-0.02em]">
                 Let's give your yard the season it deserves.
               </h2>
               <p className="mt-6 max-w-lg text-sand-100/85">
@@ -50,16 +50,16 @@ export function CTA() {
                     <dt className="text-sand-200/70 text-xs uppercase tracking-wider">
                       Call or text
                     </dt>
-                    <dd className="font-medium">(703) 555-0142</dd>
+                    <dd className="font-medium">(571) 298-5998</dd>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail className="h-4 w-4 mt-0.5 text-sand-200" />
                   <div>
                     <dt className="text-sand-200/70 text-xs uppercase tracking-wider">
-                      Email
+                      Owner
                     </dt>
-                    <dd className="font-medium">harold@guzmanlandscaping.com</dd>
+                    <dd className="font-medium">Brayan</dd>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -68,7 +68,7 @@ export function CTA() {
                     <dt className="text-sand-200/70 text-xs uppercase tracking-wider">
                       Service area
                     </dt>
-                    <dd className="font-medium">Lake Ridge & NoVA</dd>
+                    <dd className="font-medium">Stevens Rd, Woodbridge, VA</dd>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -77,14 +77,14 @@ export function CTA() {
                     <dt className="text-sand-200/70 text-xs uppercase tracking-wider">
                       Hours
                     </dt>
-                    <dd className="font-medium">Mon–Sat · 7am–6pm</dd>
+                    <dd className="font-medium">Open daily · Closes 10 PM</dd>
                   </div>
                 </div>
               </dl>
             </div>
 
             <form
-              className="rounded-2xl bg-sand-50 p-6 md:p-8 text-moss-900"
+              className="rounded-2xl bg-sand-50 p-5 sm:p-6 md:p-8 text-moss-900"
               onSubmit={(e) => e.preventDefault()}
             >
               <div className="grid sm:grid-cols-2 gap-4">
@@ -92,7 +92,7 @@ export function CTA() {
                 <Field
                   label="Phone"
                   name="phone"
-                  placeholder="(703) 555-0123"
+                  placeholder="(571) 555-0123"
                 />
               </div>
               <Field
