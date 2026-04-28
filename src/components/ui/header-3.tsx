@@ -52,8 +52,8 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 w-full border-b border-border",
-        "bg-sand-50/95 supports-[backdrop-filter]:bg-sand-50/85 backdrop-blur-lg shadow-sm"
+        "sticky top-0 z-[60] w-full border-b border-border",
+        "bg-sand-50 shadow-sm"
       )}
     >
       <nav className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
@@ -70,8 +70,14 @@ export function Header() {
                 <NavigationMenuTrigger className="bg-transparent text-moss-900 hover:text-moss-950">
                   Services
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-sand-50 p-1 pr-1.5">
-                  <ul className="bg-sand-50 grid w-[36rem] grid-cols-2 gap-2 rounded-md border border-moss-900/10 p-2 shadow-lg">
+                <NavigationMenuContent
+                  style={{ backgroundColor: "#fbf8f1" }}
+                  className="p-1 pr-1.5"
+                >
+                  <ul
+                    style={{ backgroundColor: "#fbf8f1" }}
+                    className="grid w-[36rem] grid-cols-2 gap-2 rounded-md border border-moss-900/10 p-2 shadow-lg"
+                  >
                     {serviceLinks.map((item, i) => (
                       <li key={i}>
                         <ListItem {...item} />
@@ -95,9 +101,15 @@ export function Header() {
                 <NavigationMenuTrigger className="bg-transparent text-moss-900 hover:text-moss-950">
                   About
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-sand-50 p-1 pr-1.5 pb-1.5">
+                <NavigationMenuContent
+                  style={{ backgroundColor: "#fbf8f1" }}
+                  className="p-1 pr-1.5 pb-1.5"
+                >
                   <div className="grid w-[36rem] grid-cols-2 gap-2">
-                    <ul className="bg-sand-50 space-y-2 rounded-md border border-moss-900/10 p-2 shadow-lg">
+                    <ul
+                      style={{ backgroundColor: "#fbf8f1" }}
+                      className="space-y-2 rounded-md border border-moss-900/10 p-2 shadow-lg"
+                    >
                       {aboutLinks.map((item, i) => (
                         <li key={i}>
                           <ListItem {...item} />
