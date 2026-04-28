@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdc4a8"/>
+      <stop offset="1" stop-color="#a8a486"/>
+    </linearGradient>
+    <linearGradient id="bGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a7a3e"/>
+      <stop offset="1" stop-color="#4a4a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bSky)"/>
+
+  <!-- house -->
+  <g transform="translate(960 280)">
+    <rect x="0" y="80" width="500" height="280" fill="#d8c9a8"/>
+    <polygon points="0,80 250,-30 500,80" fill="#5a3a1c"/>
+    <rect x="60" y="220" width="100" height="140" fill="#3a2a1c"/>
+    <rect x="220" y="200" width="80" height="80" fill="#7a8e6e"/>
+    <rect x="350" y="200" width="80" height="80" fill="#7a8e6e"/>
+  </g>
+
+  <!-- weedy unkempt ground -->
+  <rect y="540" width="1600" height="360" fill="url(#bGround)"/>
+
+  <!-- patches of dead/dry grass -->
+  <g opacity="0.55">
+    <ellipse cx="200" cy="640" rx="120" ry="20" fill="#3a3a10"/>
+    <ellipse cx="500" cy="700" rx="160" ry="22" fill="#3a3a10"/>
+    <ellipse cx="900" cy="660" rx="140" ry="20" fill="#3a3a10"/>
+    <ellipse cx="1300" cy="720" rx="180" ry="24" fill="#3a3a10"/>
+    <ellipse cx="350" cy="800" rx="200" ry="26" fill="#5a4a1a"/>
+    <ellipse cx="1100" cy="820" rx="240" ry="28" fill="#5a4a1a"/>
+  </g>
+
+  <!-- tall weeds -->
+  <g stroke="#5a4a1a" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M120 540 Q 122 480 130 440"/>
+    <path d="M140 540 Q 145 480 155 440"/>
+    <path d="M160 540 Q 162 480 170 445"/>
+    <path d="M260 530 Q 265 470 275 430"/>
+    <path d="M280 530 Q 282 470 290 435"/>
+    <path d="M620 530 Q 625 470 635 430"/>
+    <path d="M640 530 Q 645 470 655 435"/>
+    <path d="M680 530 Q 682 470 690 440"/>
+    <path d="M1180 540 Q 1185 480 1195 440"/>
+    <path d="M1200 540 Q 1205 480 1215 445"/>
+  </g>
+
+  <!-- overgrown shrubs -->
+  <g>
+    <ellipse cx="980" cy="560" rx="120" ry="80" fill="#3e4a2a"/>
+    <ellipse cx="940" cy="500" rx="80" ry="70" fill="#52623a"/>
+    <ellipse cx="1020" cy="490" rx="60" ry="60" fill="#3e4a2a"/>
+
+    <ellipse cx="1320" cy="570" rx="140" ry="85" fill="#3e4a2a"/>
+    <ellipse cx="1280" cy="500" rx="80" ry="70" fill="#52623a"/>
+    <ellipse cx="1360" cy="490" rx="70" ry="60" fill="#3e4a2a"/>
+
+    <ellipse cx="1500" cy="580" rx="100" ry="60" fill="#3e4a2a"/>
+  </g>
+
+  <!-- scattered leaves/debris -->
+  <g fill="#6a4818" opacity="0.7">
+    <circle cx="80" cy="700" r="6"/>
+    <circle cx="180" cy="760" r="7"/>
+    <circle cx="340" cy="730" r="5"/>
+    <circle cx="450" cy="800" r="8"/>
+    <circle cx="700" cy="780" r="6"/>
+    <circle cx="820" cy="830" r="7"/>
+    <circle cx="1000" cy="800" r="5"/>
+    <circle cx="1180" cy="770" r="8"/>
+    <circle cx="1450" cy="800" r="7"/>
+  </g>
+</svg>

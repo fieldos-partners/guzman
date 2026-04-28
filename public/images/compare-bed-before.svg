@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bb1Sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdc4a8"/>
+      <stop offset="1" stop-color="#a8a486"/>
+    </linearGradient>
+    <linearGradient id="bb1Bed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6a5a30"/>
+      <stop offset="1" stop-color="#3a2e10"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bb1Sky)"/>
+  <!-- house siding -->
+  <rect y="200" width="1600" height="380" fill="#d8c9a8"/>
+  <rect y="200" width="1600" height="6" fill="#8a7b5a"/>
+  <!-- windows -->
+  <rect x="180" y="280" width="160" height="180" fill="#7a8e6e"/>
+  <rect x="720" y="280" width="160" height="180" fill="#7a8e6e"/>
+  <rect x="1260" y="280" width="160" height="180" fill="#7a8e6e"/>
+  <!-- weed-overrun bed -->
+  <rect y="580" width="1600" height="180" fill="url(#bb1Bed)"/>
+  <!-- patchy weeds and overgrowth -->
+  <g>
+    <ellipse cx="220" cy="580" rx="160" ry="100" fill="#3e4a2a"/>
+    <ellipse cx="180" cy="540" rx="100" ry="80" fill="#52623a"/>
+    <ellipse cx="290" cy="530" rx="80" ry="70" fill="#3e4a2a"/>
+    <ellipse cx="780" cy="580" rx="180" ry="110" fill="#3e4a2a"/>
+    <ellipse cx="720" cy="530" rx="110" ry="80" fill="#52623a"/>
+    <ellipse cx="850" cy="520" rx="100" ry="80" fill="#3e4a2a"/>
+    <ellipse cx="1320" cy="580" rx="160" ry="100" fill="#3e4a2a"/>
+    <ellipse cx="1280" cy="540" rx="100" ry="80" fill="#52623a"/>
+    <ellipse cx="1380" cy="530" rx="90" ry="70" fill="#3e4a2a"/>
+  </g>
+  <!-- tall weeds emerging -->
+  <g stroke="#5a4a1a" stroke-width="2.5" fill="none" opacity="0.85">
+    <path d="M460 580 Q 462 520 470 470"/>
+    <path d="M480 580 Q 485 520 495 470"/>
+    <path d="M500 580 Q 502 520 510 475"/>
+    <path d="M1080 580 Q 1082 520 1090 470"/>
+    <path d="M1100 580 Q 1105 520 1115 470"/>
+    <path d="M1120 580 Q 1122 520 1130 475"/>
+  </g>
+  <!-- dead lawn -->
+  <rect y="760" width="1600" height="140" fill="#7a7a3e"/>
+  <g opacity="0.5" fill="#5a4a1a">
+    <ellipse cx="300" cy="820" rx="180" ry="20"/>
+    <ellipse cx="900" cy="850" rx="220" ry="24"/>
+    <ellipse cx="1400" cy="830" rx="200" ry="22"/>
+  </g>
+</svg>

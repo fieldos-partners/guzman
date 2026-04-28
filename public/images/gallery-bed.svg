@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bedSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4ecd8"/>
+      <stop offset="1" stop-color="#e9d9b2"/>
+    </linearGradient>
+    <linearGradient id="bedMulch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3a22"/>
+      <stop offset="1" stop-color="#3a2010"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bedSky)"/>
+  <!-- house wall -->
+  <rect y="120" width="1200" height="220" fill="#fbf8f1"/>
+  <rect y="120" width="1200" height="6" fill="#dabd83"/>
+  <!-- windows -->
+  <rect x="120" y="160" width="100" height="120" fill="#9bbe8e"/>
+  <rect x="540" y="160" width="100" height="120" fill="#9bbe8e"/>
+  <rect x="960" y="160" width="100" height="120" fill="#9bbe8e"/>
+  <!-- mulch bed -->
+  <rect y="340" width="1200" height="100" fill="url(#bedMulch)"/>
+  <!-- lawn -->
+  <rect y="440" width="1200" height="160" fill="#3a6a2f"/>
+  <!-- shrubs in front of windows -->
+  <g>
+    <ellipse cx="170" cy="340" rx="80" ry="55" fill="#274422"/>
+    <ellipse cx="170" cy="320" rx="55" ry="40" fill="#4d8540"/>
+    <ellipse cx="590" cy="345" rx="90" ry="60" fill="#274422"/>
+    <ellipse cx="590" cy="315" rx="60" ry="42" fill="#4d8540"/>
+    <ellipse cx="1010" cy="340" rx="80" ry="55" fill="#274422"/>
+    <ellipse cx="1010" cy="320" rx="55" ry="40" fill="#4d8540"/>
+  </g>
+  <!-- ornamental grasses -->
+  <g stroke="#cda058" stroke-width="3" fill="none" opacity="0.85">
+    <path d="M380 410 Q 380 360 390 320"/>
+    <path d="M390 410 Q 395 360 405 325"/>
+    <path d="M400 410 Q 405 360 412 330"/>
+    <path d="M820 410 Q 820 360 830 320"/>
+    <path d="M830 410 Q 835 360 845 325"/>
+    <path d="M840 410 Q 845 360 852 330"/>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#274422"/>
+      <stop offset="0.55" stop-color="#3a6a2f"/>
+      <stop offset="1" stop-color="#4d8540"/>
+    </linearGradient>
+    <linearGradient id="lawn2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a6a2f"/>
+      <stop offset="1" stop-color="#1f361c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#cda058" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#cda058" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blurSoft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#sky2)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <!-- far ridge -->
+  <path d="M0 540 Q 480 460 960 510 T 1920 500 L 1920 1080 L 0 1080 Z" fill="#3a6a2f" opacity="0.6" filter="url(#blurSoft)"/>
+  <!-- mid ridge -->
+  <path d="M0 620 Q 480 560 960 600 T 1920 590 L 1920 1080 L 0 1080 Z" fill="#2f5527" opacity="0.85"/>
+  <!-- foreground lawn -->
+  <path d="M0 720 Q 480 680 960 720 T 1920 720 L 1920 1080 L 0 1080 Z" fill="url(#lawn2)"/>
+
+  <!-- mowing stripes -->
+  <g opacity="0.15" fill="#0e1e0c">
+    <path d="M0 780 Q 480 760 960 780 T 1920 780 L 1920 820 Q 960 800 480 820 T 0 820 Z"/>
+    <path d="M0 880 Q 480 860 960 880 T 1920 880 L 1920 920 Q 960 900 480 920 T 0 920 Z"/>
+    <path d="M0 980 Q 480 960 960 980 T 1920 980 L 1920 1020 Q 960 1000 480 1020 T 0 1020 Z"/>
+  </g>
+
+  <!-- silhouette trees -->
+  <g fill="#1f361c">
+    <ellipse cx="240" cy="540" rx="160" ry="220"/>
+    <rect x="232" y="700" width="16" height="80"/>
+  </g>
+  <g fill="#1f361c" opacity="0.9">
+    <ellipse cx="1680" cy="580" rx="140" ry="200"/>
+    <rect x="1672" y="730" width="16" height="70"/>
+  </g>
+  <g fill="#274422" opacity="0.85">
+    <ellipse cx="1380" cy="620" rx="100" ry="150"/>
+    <rect x="1374" y="730" width="12" height="60"/>
+  </g>
+  <g fill="#274422" opacity="0.85">
+    <ellipse cx="520" cy="640" rx="90" ry="130"/>
+    <rect x="514" y="740" width="12" height="50"/>
+  </g>
+</svg>

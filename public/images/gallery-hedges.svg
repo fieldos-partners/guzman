@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="hgsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4ecd8"/>
+      <stop offset="1" stop-color="#e9d9b2"/>
+    </linearGradient>
+    <linearGradient id="hgrass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ea05c"/>
+      <stop offset="1" stop-color="#3a6a2f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#hgsky)"/>
+  <rect y="430" width="600" height="170" fill="url(#hgrass)"/>
+  <!-- formal hedges -->
+  <g>
+    <rect x="60" y="280" width="160" height="160" rx="12" fill="#274422"/>
+    <rect x="60" y="280" width="160" height="20" fill="#3a6a2f"/>
+    <rect x="240" y="240" width="120" height="200" rx="10" fill="#274422"/>
+    <rect x="240" y="240" width="120" height="20" fill="#3a6a2f"/>
+    <rect x="380" y="300" width="160" height="140" rx="12" fill="#274422"/>
+    <rect x="380" y="300" width="160" height="18" fill="#3a6a2f"/>
+  </g>
+  <!-- texture lines -->
+  <g opacity="0.18" stroke="#0e1e0c" stroke-width="2" fill="none">
+    <path d="M70 320 L 210 320"/>
+    <path d="M70 360 L 210 360"/>
+    <path d="M70 400 L 210 400"/>
+    <path d="M250 280 L 350 280"/>
+    <path d="M250 330 L 350 330"/>
+    <path d="M250 380 L 350 380"/>
+    <path d="M390 340 L 530 340"/>
+    <path d="M390 380 L 530 380"/>
+    <path d="M390 420 L 530 420"/>
+  </g>
+</svg>

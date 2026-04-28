@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="mulchSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4ecd8"/>
+      <stop offset="1" stop-color="#e9d9b2"/>
+    </linearGradient>
+    <linearGradient id="bed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a3a22"/>
+      <stop offset="1" stop-color="#3a2010"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#mulchSky)"/>
+  <rect y="320" width="600" height="280" fill="url(#bed)"/>
+  <!-- mulch texture -->
+  <g opacity="0.4" fill="#2a1808">
+    <ellipse cx="80" cy="380" rx="20" ry="6"/>
+    <ellipse cx="180" cy="420" rx="22" ry="6"/>
+    <ellipse cx="280" cy="380" rx="24" ry="6"/>
+    <ellipse cx="380" cy="430" rx="20" ry="6"/>
+    <ellipse cx="490" cy="395" rx="26" ry="6"/>
+    <ellipse cx="120" cy="490" rx="22" ry="6"/>
+    <ellipse cx="240" cy="510" rx="24" ry="6"/>
+    <ellipse cx="380" cy="495" rx="22" ry="6"/>
+    <ellipse cx="500" cy="525" rx="26" ry="6"/>
+  </g>
+  <!-- bushes -->
+  <ellipse cx="120" cy="320" rx="80" ry="40" fill="#3a6a2f"/>
+  <ellipse cx="100" cy="290" rx="55" ry="40" fill="#4d8540"/>
+  <ellipse cx="320" cy="320" rx="100" ry="50" fill="#274422"/>
+  <ellipse cx="300" cy="280" rx="65" ry="45" fill="#3a6a2f"/>
+  <ellipse cx="500" cy="320" rx="80" ry="40" fill="#3a6a2f"/>
+  <ellipse cx="520" cy="290" rx="55" ry="38" fill="#4d8540"/>
+  <!-- metal edging -->
+  <rect x="0" y="316" width="600" height="4" fill="#9aa099"/>
+</svg>
