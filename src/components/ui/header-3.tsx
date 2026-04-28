@@ -37,7 +37,6 @@ type LinkItem = {
 
 export function Header() {
   const [open, setOpen] = React.useState(false);
-  const scrolled = useScroll(10);
 
   React.useEffect(() => {
     if (open) {
@@ -52,10 +51,10 @@ export function Header() {
 
   return (
     <header
-      className={cn("sticky top-0 z-50 w-full border-b border-transparent", {
-        "bg-background/95 supports-[backdrop-filter]:bg-background/60 border-border backdrop-blur-lg":
-          scrolled,
-      })}
+      className={cn(
+        "sticky top-0 z-50 w-full border-b border-border",
+        "bg-sand-50/95 supports-[backdrop-filter]:bg-sand-50/85 backdrop-blur-lg shadow-sm"
+      )}
     >
       <nav className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
         <div className="flex items-center gap-5">
@@ -68,11 +67,11 @@ export function Header() {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent">
+                <NavigationMenuTrigger className="bg-transparent text-moss-900 hover:text-moss-950">
                   Services
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-background p-1 pr-1.5">
-                  <ul className="bg-popover grid w-[36rem] grid-cols-2 gap-2 rounded-md border p-2 shadow">
+                <NavigationMenuContent className="bg-sand-50 p-1 pr-1.5">
+                  <ul className="bg-sand-50 grid w-[36rem] grid-cols-2 gap-2 rounded-md border border-moss-900/10 p-2 shadow-lg">
                     {serviceLinks.map((item, i) => (
                       <li key={i}>
                         <ListItem {...item} />
@@ -93,12 +92,12 @@ export function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent">
+                <NavigationMenuTrigger className="bg-transparent text-moss-900 hover:text-moss-950">
                   About
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-background p-1 pr-1.5 pb-1.5">
+                <NavigationMenuContent className="bg-sand-50 p-1 pr-1.5 pb-1.5">
                   <div className="grid w-[36rem] grid-cols-2 gap-2">
-                    <ul className="bg-popover space-y-2 rounded-md border p-2 shadow">
+                    <ul className="bg-sand-50 space-y-2 rounded-md border border-moss-900/10 p-2 shadow-lg">
                       {aboutLinks.map((item, i) => (
                         <li key={i}>
                           <ListItem {...item} />
@@ -122,12 +121,18 @@ export function Header() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuLink className="px-4" asChild>
-                <a href="#reviews" className="hover:bg-accent rounded-md p-2">
+                <a
+                  href="#reviews"
+                  className="text-moss-900 hover:text-moss-950 hover:bg-accent rounded-md p-2 text-sm font-medium"
+                >
                   Reviews
                 </a>
               </NavigationMenuLink>
               <NavigationMenuLink className="px-4" asChild>
-                <a href="#contact" className="hover:bg-accent rounded-md p-2">
+                <a
+                  href="#contact"
+                  className="text-moss-900 hover:text-moss-950 hover:bg-accent rounded-md p-2 text-sm font-medium"
+                >
                   Contact
                 </a>
               </NavigationMenuLink>
@@ -203,8 +208,8 @@ function MobileMenu({ open, children, className, ...props }: MobileMenuProps) {
     <div
       id="mobile-menu"
       className={cn(
-        "bg-background/95 supports-[backdrop-filter]:bg-background/60 backdrop-blur-lg",
-        "fixed top-14 right-0 bottom-0 left-0 z-40 flex flex-col overflow-hidden border-y md:hidden"
+        "bg-sand-50",
+        "fixed top-14 right-0 bottom-0 left-0 z-40 flex flex-col overflow-hidden border-y border-moss-900/15 md:hidden"
       )}
     >
       <div
@@ -324,21 +329,3 @@ const quickLinks: LinkItem[] = [
   { title: "Owner: Brayan", href: "#contact", icon: Phone },
 ];
 
-function useScroll(threshold: number) {
-  const [scrolled, setScrolled] = React.useState(false);
-
-  const onScroll = React.useCallback(() => {
-    setScrolled(window.scrollY > threshold);
-  }, [threshold]);
-
-  React.useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [onScroll]);
-
-  React.useEffect(() => {
-    onScroll();
-  }, [onScroll]);
-
-  return scrolled;
-}
