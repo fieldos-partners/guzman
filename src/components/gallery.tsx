@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 
 const shots = [
-  { src: "/images/photos/landscape-hero.jpg", label: "Yard transformation" },
-  { src: "/images/photos/lawn-front.jpg", label: "Lawn cut & edge" },
-  { src: "/images/photos/mulch-bed.jpg", label: "Mulch refresh" },
-  { src: "/images/photos/garden-bed.jpg", label: "Bed installation" },
-  { src: "/images/photos/stone-path.jpg", label: "Pathway clean-up" },
-  { src: "/images/photos/tree-row.jpg", label: "Tree & hedge work" },
+  { src: "/images/gallery-mulch.svg", label: "Mulch refresh" },
+  { src: "/images/gallery-hedges.svg", label: "Hedge shaping" },
+  { src: "/images/gallery-lawn.svg", label: "Lawn cut & edge" },
+  { src: "/images/gallery-bed.svg", label: "Bed installation" },
+  { src: "/images/gallery-path.svg", label: "Pathway clean-up" },
+  { src: "/images/powerwash.svg", label: "Power washing" },
 ];
 
 export function Gallery() {
@@ -36,7 +36,7 @@ export function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.55, delay: i * 0.05 }}
-              className="relative aspect-[4/3] overflow-hidden rounded-2xl"
+              className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-moss-900"
             >
               <img
                 src={s.src}
