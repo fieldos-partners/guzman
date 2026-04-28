@@ -7,8 +7,8 @@ export function GuzmanScrollHero() {
     <ScrollExpandMedia
       mediaType="video"
       mediaSrc="/videos/landscaping-hero.mp4"
-      posterSrc="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1600&q=80"
-      bgImageSrc="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=2400&q=80"
+      posterSrc="/images/photos/lawn-front.jpg"
+      bgImageSrc="/images/photos/landscape-hero.jpg"
       title="B&A Landscape"
       date="Woodbridge, VA"
       scrollToExpand="Scroll to see our work"

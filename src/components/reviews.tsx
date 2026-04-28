@@ -17,7 +17,7 @@ export function Reviews() {
           className="relative overflow-hidden rounded-[2rem] shadow-soft"
         >
           <img
-            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=2000&q=70"
+            src="/images/photos/landscape-hero.jpg"
             alt=""
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
@@ -25,20 +25,24 @@ export function Reviews() {
           />
           <div
             aria-hidden
+            className="absolute inset-0 bg-moss-950/85"
+          />
+          <div
+            aria-hidden
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(135deg, rgba(15,30,12,0.78) 0%, rgba(31,54,28,0.7) 100%)",
+                "linear-gradient(135deg, rgba(15,30,12,0.55) 0%, rgba(15,30,12,0.0) 60%)",
             }}
           />
 
           <div className="relative px-5 py-10 sm:px-8 sm:py-14 md:px-16 md:py-20 text-sand-50">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div>
-                <div className="text-[11px] uppercase tracking-[0.22em] text-sand-200/80">
+            <div className="grid lg:grid-cols-5 gap-10 items-center">
+              <div className="lg:col-span-2">
+                <div className="text-[11px] uppercase tracking-[0.22em] text-sand-200/85">
                   In their words
                 </div>
-                <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.02em]">
+                <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.02em] text-sand-50">
                   What clients say.
                 </h2>
                 <div className="mt-5 flex items-center gap-3">
@@ -47,19 +51,19 @@ export function Reviews() {
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </span>
-                  <span className="text-sm text-sand-100/85">
+                  <span className="text-sm text-sand-100">
                     <span className="font-display text-xl">5.0</span> · 4
                     verified reviews
                   </span>
                 </div>
               </div>
 
-              <blockquote className="relative">
-                <Quote className="h-6 w-6 text-sand-200/70" />
-                <p className="mt-3 font-display text-lg sm:text-xl md:text-2xl leading-snug text-sand-50">
+              <blockquote className="lg:col-span-3 relative rounded-2xl bg-moss-950/55 ring-1 ring-sand-50/15 p-5 sm:p-6 md:p-8 backdrop-blur-sm">
+                <Quote className="h-6 w-6 text-sand-300" />
+                <p className="mt-3 text-base sm:text-lg md:text-xl leading-relaxed text-sand-50 font-medium">
                   "{featured.quote}"
                 </p>
-                <footer className="mt-4 text-xs uppercase tracking-[0.2em] text-sand-200/85">
+                <footer className="mt-5 text-[11px] uppercase tracking-[0.2em] text-sand-200">
                   — {featured.name}
                   {featured.meta ? ` · ${featured.meta}` : ""} · {featured.date}
                 </footer>

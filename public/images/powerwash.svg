@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pwSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4ecd8"/>
+      <stop offset="1" stop-color="#e9d9b2"/>
+    </linearGradient>
+    <linearGradient id="pwSiding" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf8f1"/>
+      <stop offset="1" stop-color="#dabd83"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#pwSky)"/>
+  <!-- house siding before/after halves -->
+  <rect x="0" y="180" width="300" height="420" fill="#a8a486"/>
+  <rect x="300" y="180" width="300" height="420" fill="url(#pwSiding)"/>
+  <!-- siding lines -->
+  <g stroke="#5a5a3e" stroke-width="2" opacity="0.45">
+    <line x1="0" y1="240" x2="300" y2="240"/>
+    <line x1="0" y1="300" x2="300" y2="300"/>
+    <line x1="0" y1="360" x2="300" y2="360"/>
+    <line x1="0" y1="420" x2="300" y2="420"/>
+    <line x1="0" y1="480" x2="300" y2="480"/>
+    <line x1="0" y1="540" x2="300" y2="540"/>
+  </g>
+  <g stroke="#9aa099" stroke-width="2" opacity="0.6">
+    <line x1="300" y1="240" x2="600" y2="240"/>
+    <line x1="300" y1="300" x2="600" y2="300"/>
+    <line x1="300" y1="360" x2="600" y2="360"/>
+    <line x1="300" y1="420" x2="600" y2="420"/>
+    <line x1="300" y1="480" x2="600" y2="480"/>
+    <line x1="300" y1="540" x2="600" y2="540"/>
+  </g>
+  <!-- grime patches on dirty side -->
+  <g fill="#3a3a10" opacity="0.45">
+    <ellipse cx="60" cy="280" rx="50" ry="20"/>
+    <ellipse cx="180" cy="340" rx="60" ry="22"/>
+    <ellipse cx="100" cy="420" rx="55" ry="18"/>
+    <ellipse cx="220" cy="500" rx="60" ry="20"/>
+  </g>
+  <!-- spray fan boundary -->
+  <path d="M310 440 L 200 280 L 240 280 L 320 430 Z" fill="#cfe5f4" opacity="0.6"/>
+  <path d="M310 440 L 240 280 L 280 280 L 320 430 Z" fill="#a3cce0" opacity="0.6"/>
+  <!-- spray droplets -->
+  <g fill="#cfe5f4">
+    <circle cx="220" cy="320" r="3"/>
+    <circle cx="200" cy="350" r="3"/>
+    <circle cx="240" cy="380" r="3"/>
+    <circle cx="180" cy="400" r="3"/>
+    <circle cx="260" cy="420" r="2.5"/>
+    <circle cx="170" cy="440" r="2.5"/>
+    <circle cx="220" cy="460" r="3"/>
+  </g>
+  <!-- pressure washer wand -->
+  <g transform="translate(420 440) rotate(-25)">
+    <rect x="-8" y="-4" width="120" height="8" rx="2" fill="#274422"/>
+    <rect x="-22" y="-12" width="20" height="24" fill="#1f361c"/>
+    <rect x="-30" y="-6" width="14" height="12" fill="#3a6a2f"/>
+  </g>
+  <!-- divider with labels -->
+  <rect x="298" y="180" width="4" height="420" fill="#3a2a1c" opacity="0.6"/>
+</svg>
