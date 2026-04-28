@@ -51,9 +51,9 @@ export function Header() {
 
   return (
     <header
+      style={{ backgroundColor: "#fbf8f1" }}
       className={cn(
-        "sticky top-0 z-[60] w-full border-b border-border",
-        "bg-sand-50 shadow-sm"
+        "sticky top-0 z-[60] w-full border-b-2 border-moss-900/15 shadow-md"
       )}
     >
       <nav className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between px-4">
