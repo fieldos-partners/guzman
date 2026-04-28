@@ -12,7 +12,6 @@ export function GuzmanScrollHero() {
       title="B&A Landscape"
       date="Woodbridge, VA"
       scrollToExpand="Scroll to see our work"
-      textBlend
     >
       <div className="max-w-4xl mx-auto text-moss-900">
         <h2 className="font-display text-3xl md:text-4xl font-semibold mb-6 text-moss-950">

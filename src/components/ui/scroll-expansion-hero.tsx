@@ -184,7 +184,7 @@ const ScrollExpandMedia = ({
               alt="Background"
               className="w-screen h-screen object-cover object-center"
             />
-            <div className="absolute inset-0 bg-black/10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/65" />
           </motion.div>
 
           <div className="container mx-auto flex flex-col items-center justify-start relative z-10">
@@ -276,7 +276,7 @@ const ScrollExpandMedia = ({
                 <div className="flex flex-col items-center text-center relative z-10 mt-4 transition-none">
                   {date && (
                     <p
-                      className="text-2xl text-sand-100"
+                      className="text-xl md:text-2xl text-white font-medium drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)]"
                       style={{ transform: `translateX(-${textTranslateX}vw)` }}
                     >
                       {date}
@@ -284,7 +284,7 @@ const ScrollExpandMedia = ({
                   )}
                   {scrollToExpand && (
                     <p
-                      className="text-sand-100 font-medium text-center"
+                      className="text-white font-medium text-center drop-shadow-[0_1px_8px_rgba(0,0,0,0.6)]"
                       style={{ transform: `translateX(${textTranslateX}vw)` }}
                     >
                       {scrollToExpand}
@@ -299,13 +299,13 @@ const ScrollExpandMedia = ({
                 }`}
               >
                 <motion.h2
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-sand-100 transition-none"
+                  className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] transition-none"
                   style={{ transform: `translateX(-${textTranslateX}vw)` }}
                 >
                   {firstWord}
                 </motion.h2>
                 <motion.h2
-                  className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-sand-100 transition-none"
+                  className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.7)] transition-none"
                   style={{ transform: `translateX(${textTranslateX}vw)` }}
                 >
                   {restOfTitle}
